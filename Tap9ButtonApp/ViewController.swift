@@ -44,7 +44,15 @@ class ViewController: UIViewController {
             default:
                 break
             }
+            self.view.addSubview(imageButton)
         }
+    }
+    
+    
+    @objc func tapButton(_ sender:UIButton){
+        print(sender.tag)
+        
+        
     }
     
     
