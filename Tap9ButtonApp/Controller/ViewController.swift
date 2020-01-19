@@ -62,8 +62,38 @@ class ViewController: UIViewController {
         
  
         for i in 0...8{
+            
             switch i {
+                
             case 0:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 1:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 2:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 3:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 4:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 5:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 6:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 7:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            case 8:
+                performSegue(withIdentifier: "next", sender: nil)
+                break
+            default:
+                break
                 
             }
         }
