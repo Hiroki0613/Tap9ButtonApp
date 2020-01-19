@@ -60,10 +60,12 @@ class ViewController: UIViewController {
     @objc func tapButton(_ sender:UIButton){
         print(sender.tag)
         
-        if (sender as AnyObject).tag == 1 {
-            pickedAnswer = 1
-        } else if (sender as AnyObject).tag == 2 {
-            pickedAnswer = 2
+ 
+        for i in 0...8{
+            switch i {
+            case 0:
+                
+            }
         }
         
     }
