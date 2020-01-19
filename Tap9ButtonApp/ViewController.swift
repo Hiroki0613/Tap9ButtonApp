@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-     var imageButton:UIButton!
-
+    //Buttonをコードで実装
+    var imageButton:UIButton!
+    //現在の問題数
+    var questionNumber = 0
+    //選択された回答　回答1なら1、回答2なら2になる
+    var pickedAnswer = 0
+    //正解数をprintで表示
+    var correctAnswerNumber = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,6 +60,11 @@ class ViewController: UIViewController {
     @objc func tapButton(_ sender:UIButton){
         print(sender.tag)
         
+        if (sender as AnyObject).tag == 1 {
+            pickedAnswer = 1
+        } else if (sender as AnyObject).tag == 2 {
+            pickedAnswer = 2
+        }
         
     }
     
