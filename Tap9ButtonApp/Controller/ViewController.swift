@@ -19,9 +19,14 @@ class ViewController: UIViewController {
     //正解数をprintで表示
     var correctAnswerNumber = 0
     
+    //遷移先の色を押したボタンによって変更
+    var fromViewControllerColor = UIColor()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .gray
         
         for i in 0...8{
             imageButton = UIButton()
@@ -67,37 +72,51 @@ class ViewController: UIViewController {
                 
             case 0:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .blue
                 break
             case 1:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .brown
                 break
             case 2:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .cyan
                 break
             case 3:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .darkGray
                 break
             case 4:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .green
                 break
             case 5:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .magenta
                 break
             case 6:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .orange
                 break
             case 7:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .purple
                 break
             case 8:
                 performSegue(withIdentifier: "next", sender: nil)
+                fromViewControllerColor = .red
                 break
             default:
                 break
-                
             }
         }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "next" {
+            let nextVC = segue.description as! NextViewController
+            nextVC.fromViewControllerColler = fromViewControllerColor
+        }
     }
     
     
