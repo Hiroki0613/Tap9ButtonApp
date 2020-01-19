@@ -60,17 +60,41 @@
 		7F08573223CF43C200675AC7 /* Tap9ButtonApp */ = {
 			isa = PBXGroup;
 			children = (
+				7F6CCCCC23D4729700615BB7 /* Model */,
+				7F6CCCCB23D4727E00615BB7 /* View */,
+				7F6CCCCA23D4725900615BB7 /* Controller */,
+				7F08574123CF43C300675AC7 /* Info.plist */,
+			);
+			path = Tap9ButtonApp;
+			sourceTree = "<group>";
+		};
+		7F6CCCCA23D4725900615BB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				7F08573323CF43C200675AC7 /* AppDelegate.swift */,
 				7F08573523CF43C200675AC7 /* SceneDelegate.swift */,
 				7F08573723CF43C200675AC7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F6CCCCB23D4727E00615BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				7F08573923CF43C200675AC7 /* Main.storyboard */,
-				7F08573C23CF43C300675AC7 /* Assets.xcassets */,
 				7F08573E23CF43C300675AC7 /* LaunchScreen.storyboard */,
-				7F08574123CF43C300675AC7 /* Info.plist */,
+				7F08573C23CF43C300675AC7 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F6CCCCC23D4729700615BB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				7F6CCCC623D46D6100615BB7 /*  Question.swift */,
 				7F6CCCC823D46EEA00615BB7 /* QuestionBank.swift */,
 			);
-			path = Tap9ButtonApp;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
